@@ -8,7 +8,7 @@ const aleaRNGFactory = require("number-generator/lib/aleaRNGFactory");
 async function RegistrationController(req, res) {
   const { fullName, email, password, facebookid, linkedinid } = req.body;
   if (!fullName) {
-    return res.send({ error: "Name Is Requird" });
+    return res.send({ error: "your Name Is Requird" });
   } else if (!email) {
     return res.send({ error: "Email Is Requird" });
   } else if (!emailvalidation(email)) {
